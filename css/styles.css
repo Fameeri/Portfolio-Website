@@ -1,0 +1,14 @@
+/* Index.html page */
+body {
+    background-color: rgb(199, 179, 179);
+    color: rgb(27, 26, 24);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightslategray;
+    padding: 0 1rem;
+}
