@@ -1,14 +1,103 @@
-/* Index.html page */
-body {
-    background-color: rgb(199, 179, 179);
-    color: rgb(27, 26, 24);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+:root {
+    --primary-color: #007bff;
+    --text-color: #333;
+    --background-color: #acbabd;
 }
 
-.header {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1qrem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: lightslategray;
-    padding: 0 1rem;
+    flex-direction: column;
+
+
+}
+
+main {
+    flex-grow: 1;
+}
+
+.nav_list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.nav_link:hover {
+    color: var(--primary-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.project {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #9ad7df;
+}
+
+.project_image {
+    width: 100%;
+    height: auto;
+}
+
+.project_content {
+    padding: 1rem;
+}
+
+
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: rgb(235, 221, 221);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    background-color: #647481;
+    margin-top: 5rem;
+
+
+}
+
+@media (max-width: 768px) {
+    .nav_list {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
